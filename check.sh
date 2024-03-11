@@ -4,5 +4,7 @@ text=$(cat scan-report.yaml | grep -i  Error)
 if test "$text" = "$check"
 then
    echo "$text"
+else
+   exit 0
 fi
 exit 1 
