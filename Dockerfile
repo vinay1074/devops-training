@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y nano --allow-unauthenticated
+RUN sudo apt-get update && apt-get install -y nano --allow-unauthenticated
 
 ADD . /app/
 
